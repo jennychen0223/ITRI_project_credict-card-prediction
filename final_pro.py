@@ -13,7 +13,7 @@ import requests
 import pickle
 import xgboost
 
-import pandas as pd # 引用套件並縮寫為 pd 
+import pandas as pd 
 import numpy as np
 
 app = Flask(__name__)
@@ -130,14 +130,12 @@ def handle_message(event):
         df['Avg_Account_Balance'] = (df['Avg_Account_Balance']-13.720060)/0.620936
         loaded_model = pickle.load(open("pima_pickle.dat", "rb"))
 
-        # make predictions for test data
         y_pred = loaded_model.predict(df)
         predictions = [round(value) for value in y_pred]        
         if predictions[0]:
             final = '會購買!'
         else:
             final = '不會購買!'   
-        #row之順序為 (int)age, vintage, avg_account_balance\\\\(str)credit_product is_active, occupation
         try:
             message = TextSendMessage(
                 text = final
@@ -145,7 +143,6 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, message)
         except:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text='發生錯誤!'))
-#         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = row))
     elif "取消" in mtext:
         get_data(1)
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = format_s))
@@ -158,15 +155,9 @@ def preprocessing(mtext):
         age = int(s_list[1].split('：')[1])
         vintage = int(s_list[2].split('：')[1])
         avg_account_balance = int(s_list[3].split('：')[1])
-#         credit_product = s_list[4].split('?')[1]
-#         is_active = s_list[5].split('?')[1]
-#         occupation = s_list[6].split('：')[1]
-#         s = f'您的資料為\n1.年齡：{age}\n2.開戶時長(月份)：{vintage}\n3.近一年的餘額：{avg_account_balance}\n4.是否已使用信貸服務?{credit_product}\n5.是否近三個月使用金融服務?{is_active}\n6.職稱類別：{occupation}'
         s = f'您的資料為\n1.年齡：{age}\n2.開戶時長(月份)：{vintage}\n3.近一年的餘額：{avg_account_balance}'
     except:
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='輸入錯誤!'))
-#     control_step(step)
-#     return s
     return age, vintage, avg_account_balance, s
 
 def save_data(flag=None, value=None,  age=None, vintage=None, avg_account_balance=None):
@@ -228,9 +219,6 @@ def step2(mtext):
                 QuickReplyButton(
                     action=MessageAction(label="否", text="4. 否")
                 )
-#                 ,QuickReplyButton(
-#                     action=MessageAction(label="重新填寫", text="重新填寫4")
-#                 )
             ]
         )
     )
@@ -247,9 +235,6 @@ def step3():
                 QuickReplyButton(
                     action=MessageAction(label="否", text="5. 否")
                 )
-#                 ,QuickReplyButton(
-#                     action=MessageAction(label="重新填寫", text="重新填寫5")
-#                 )
             ]
         )
     )
@@ -271,9 +256,6 @@ def step4():
                 QuickReplyButton(
                     action=MessageAction(label="Other", text="6. Other")
                 )
-#                 ,QuickReplyButton(
-#                     action=MessageAction(label="重新填寫", text="重新填寫6")
-#                 )
             ]
         )
     )
