@@ -1,1 +1,1 @@
-web gunicorn linebot-invoice:app
+web gunicorn final_project:app
