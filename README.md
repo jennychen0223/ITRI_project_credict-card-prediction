@@ -55,7 +55,7 @@
 1. 建立聊天機器人，使用者依照機器人的指令，回傳客戶資料，最終會回傳預測結果
 2. 優點：使用便利、快速回覆、可立即根據結果做相對應的處理
 
-<img width="247" alt="image" src="https://user-images.githubusercontent.com/81677812/128296813-7864a1e1-d23b-44ce-b2a6-8bd3a874b466.png">
+<img width="347" alt="image" src="https://user-images.githubusercontent.com/81677812/128297963-bb8d6dc5-05b1-4990-beb9-788243c86ab3.png">
 <img width="341" alt="image" src="https://user-images.githubusercontent.com/81677812/128297888-e221daba-e9c8-4c03-9385-032177c85b61.png">
 
 
