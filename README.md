@@ -56,7 +56,7 @@
 2. 優點：使用便利、快速回覆、可立即根據結果做相對應的處理
 
 <img width="247" alt="image" src="https://user-images.githubusercontent.com/81677812/128296813-7864a1e1-d23b-44ce-b2a6-8bd3a874b466.png">
-<img width="243" alt="image" src="https://user-images.githubusercontent.com/81677812/128296845-3e1b7395-a29a-4a15-9f78-d3ec7dd033ee.png">
+<img width="341" alt="image" src="https://user-images.githubusercontent.com/81677812/128297888-e221daba-e9c8-4c03-9385-032177c85b61.png">
 
 
 
