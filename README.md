@@ -6,7 +6,7 @@
 
 ## 資料來源
 
-本次資料是利用Kaggle平台釋出作為開放性議題，提供參賽者建立分類模型進行預測。
+本次資料是利用Kaggle平台釋出作為開放性議題，提供使用者建立分類模型進行預測。
 （JOB-A-THON - May 2021- Credit Card Lead Prediction）
 
 資料來源：https://www.kaggle.com/sajidhussain3/jobathon-may-2021-credit-card-lead-prediction?select=sample_submission.csv
