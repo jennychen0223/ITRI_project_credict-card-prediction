@@ -42,12 +42,12 @@
 
 |         模型結構          |  Accuracy | ROC-AUC Score |
 | -------------------------|-----------|---------------|
-|    Logistic Regression   |   70.04%  |      0.769    |
-| Decision Tree Classifier |   86.54%  |      0.865    |
-| Random Forest Classifier |   89.05%  |      0.956    |
-|          XGBoost         |   90.68%  |      0.957    |
-|          LightGBM        |   88.79%  |      0.948    |
-|            KNN           |   84.83%  |      0.848    |
+|    Logistic Regression   |   70.04%  |     0.769     |
+| Decision Tree Classifier |   86.54%  |     0.865     |
+| Random Forest Classifier |   89.05%  |     0.956     |
+|          XGBoost         |   90.68%  |     0.957     |
+|          LightGBM        |   88.79%  |     0.948     |
+|            KNN           |   84.83%  |     0.848     |
 
 
 ![ROC](https://user-images.githubusercontent.com/81677812/129683855-41307751-ee33-4fe7-a085-ce409c3cb916.png)
