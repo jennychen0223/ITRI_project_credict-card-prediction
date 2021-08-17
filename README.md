@@ -40,7 +40,7 @@
 
 ## 模型評估
 
-|         模型結構          |  Accuracy | ROC-AUC Score |
+|         Model         |  Accuracy | ROC-AUC Score |
 | :-------------------------:|:-----------:|:---------------:|
 |    Logistic Regression   |   70.04%  |     0.769     |
 | Decision Tree Classifier |   86.54%  |     0.865     |
