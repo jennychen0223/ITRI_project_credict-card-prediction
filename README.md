@@ -40,17 +40,18 @@
 
 ## 模型評估
 
-|         模型結構          |  準確率 | ROC-AUC Score |
-| -------------------------|--------|---------------|
-|    Logistic Regression   | 85.04% |     0.767     |
-| Decision Tree Classifier | 86.59% |     0.865     |
-| Random Forest Classifier | 88.93% |     0.956     |
-|          XGBoost         | 90.05% |     0.957     |
-|          LightGBM        | 88.63% |     0.947     |
-|            KNN           | 84.84% |     0.848     |
+|         模型結構          |  Accuracy | ROC-AUC Score |
+| -------------------------|-----------|---------------|
+|    Logistic Regression   |   70.04%  |      0.769    |
+| Decision Tree Classifier |   86.54%  |      0.865    |
+| Random Forest Classifier |   89.05%  |      0.956    |
+|          XGBoost         |   90.68%  |      0.957    |
+|          LightGBM        |   88.79%  |      0.948    |
+|            KNN           |   84.83%  |      0.848    |
 
 
-![ROC](https://user-images.githubusercontent.com/81677812/129667918-885a4cec-4563-45b1-ab47-645d9bfb9ee5.png)
+![ROC](https://user-images.githubusercontent.com/81677812/129683855-41307751-ee33-4fe7-a085-ce409c3cb916.png)
+
 
 ## LINE Bot實現
 1. 建立聊天機器人，使用者依照機器人的指令，回傳客戶資料，最終會回傳預測結果
