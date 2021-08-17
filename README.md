@@ -47,10 +47,11 @@
 | Random Forest Classifier | 88.93% |     0.958     |
 |          XGBoost         | 90.05% |     0.954     |
 |          Lightgbm        | 88.63% |     0.941     |
-|            KNN           | 84.69% |     0.856     |
+|            KNN           | 84.84% |     0.856     |
 
 
-<img width="632" alt="image" src="https://user-images.githubusercontent.com/81677812/129664270-bd81be2e-58b4-45fc-8f16-e409e38f62ee.png">
+![ROC](https://user-images.githubusercontent.com/81677812/129664841-8e0ee5ab-4c09-43bb-8b03-6624079db498.png)
+
 
 ## LINE Bot實現
 1. 建立聊天機器人，使用者依照機器人的指令，回傳客戶資料，最終會回傳預測結果
